@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página ITAU</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 120px 0 0 0;
+        }
+        .titulo_port{
+            margin-left: 100px;
+        }
+        ul.item_lista li{
+            display: inline-block
+        }
+        .item_negrito{
+            font-weight: bold;
+        }
+        .barra_t{
+            margin-top: 35px;
+            overflow: hidden;
+        }
+        .barra{
+            position: relative;
+            overflow: hidden;
+            height: 5px;
+            background-color: rgba(167, 167, 167, 0.3);
+            width: 100%;
+            margin-top: 40px;
+        }
+        .barra1{
+            position: absolute;
+            height: 5px;
+            background-color: rgb(8, 100, 8);
+            width: 200px;
+        }
+        .barra_txt1{
+            font-size: 12pt;
+            display: block;
+            float: left;
+            margin-left: 100px;
+        }
+        .barra2{
+            position: absolute;
+            height: 5px;
+            background-color: rgb(8, 100, 8);
+            width: 650px;
+        }
+        .barra_txt2{
+            font-weight: bold;
+            font-size: 12pt;
+            display: block;
+            margin-left: 400px;
+            float: left;
+        }
+        .barra_txt3{
+            color: grey;
+            opacity: 0.5;
+            font-size: 12pt;
+            display: block;
+            margin-left: 400px;
+            float: left; 
+        }
+        .icon_c{
+            float: left;
+            width: 15px;
+            height: 15px;
+            fill: green;
+            margin-right: 10px;
+        }
+        .conteudo{
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        h1 {
+            margin-top: 50px;
+
+        }
+        h2 {
+            margin-top: 90px;
+        }
+        li {
+            display: block;
+        }
+        p {
+            font-size: 13pt;
+            
+        }
+        .span2{
+            color: grey;
+            display: block;
+            width: 100%;
+            line-height: 30px;
+        }
+        .texto2 {
+            margin-top: 75px;
+            
+        }
+        .q1 {
+            margin-left: 20px;
+            padding: 10pt;
+            float: left;
+        }
+        .q2 {
+            margin-top: 7px;
+            margin-left: 20px;
+            padding: 10pt;
+            float: left;
+        }
+        .span1 {
+            text-align: left;
+            width: 100%;
+            display: block;
+            padding: 05px;
+        }
+        .quadro {
+            border-style: solid;
+            border-width: 1px;
+            border-color: #dad7d7;
+            overflow: hidden;
+            width: 305px
+        }
+        .q3 {
+            margin-top: 15pt;
+            margin-left: 15pt;
+            float: left;
+        }
+        .cor_casa {
+            fill: orange;
+        }
+        .botão_dados {
+
+            width: 280px;
+            padding: 10px;
+            padding-left: 0px;
+            font-size: 15px;
+            border: none;
+            border-bottom: 2px solid grey;
+        }
+        .dados_cliente {
+            overflow: hidden;
+            margin-top: 50px;
+        }
+        .dados_cliente2{
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .p {
+            font-size: 10pt;
+            color: grey;
+        }
+        .CNPJ_empresa{
+            float: left;
+            margin-left: 50px;
+            font-size: 10pt;
+        }
+        .empresa{
+            float: left;
+            margin-left: 0px;
+            font-size: 10pt;
+        }
+        .banco{
+            float: left;
+            margin-left: 50px;
+            font-size: 10pt;
+        }
+        .agencia{
+            float: left;
+            margin-left: 50px;
+            font-size: 10pt;
+        }
+        .conta_cred{
+            float: left;
+            margin-left: 50px;
+            font-size: 10pt;
+        }
+        .linha{
+            height: 2px;
+            background-color: grey;
+            opacity: 0.3;
+            width: 100%;
+            margin-top: 70px;
+        }
+        .botão_c {
+            background-color: #ff7600;
+            padding: 15px;
+            float: right;
+            width: 70px;
+            color: white;
+            font-size: 12pt;
+            text-align: center;
+            margin-top: 35px;
+            border-radius: 05px;
+        }
+        .botão_cont {
+            color: white;
+
+        }
+        .botão_volta{
+            background-color: #ffffff;
+            padding: 13px;
+            float: left;
+            color: blue;
+            font-size: 10pt;
+            text-align: center;
+            border-radius: 05px;
+            margin-top: 35px;
+            border-style: solid;
+            text-decoration: none;
+            padding: 13px;
+            border-width: 1px;
+            width: 50px
+        }
+        .rodap {
+            margin-top: 100px;
+            padding: 18px;
+            font-size: 10pt;
+            background-color: #6c757d;
+            overflow: hidden;
+        }
+        .rodap li {
+            color: white;
+        }
+        .L1{
+            float: left;
+            margin-left: 20px;
+        }
+        .L2{
+            float: left;
+            margin-left: 100px;
+        }
+        .L3{
+            float: left;
+            margin-left: 100px;
+        }
+        .p1{
+            text-decoration-line: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="item_lista">
+        <li><span>Inicio ></span></li>
+        <li><span>Conta corrente ></span></li>
+        <li><span>Salário > </span></li>
+        <li><span class="item_negrito">Portabilidade de salário</span></li>
+    </ul>
+    <div class="titulo_port">
+        <h1>Portabilidade de salário</h1>
+    </div>
+    <div class="barra_t">
+        <span class="barra_txt1"><svg class="icon_c" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="335.765px" height="335.765px" viewBox="0 0 335.765 335.765" style="enable-background:new 0 0 335.765 335.765;" xml:space="preserve">
+            <g>
+                <g>
+                    <polygon points="311.757,41.803 107.573,245.96 23.986,162.364 0,186.393 107.573,293.962 335.765,65.795   "/>
+                </g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+        </svg>01. dados</span>
+        <span class="barra_txt2">02. confirmação</span>
+        <span class="barra_txt3">03. comprovante</span>
+        <div class="barra">
+            <div class="barra1"></div>
+            <div class="barra2"></div>
+            <div class="barra3"></div>
+        </div>
+    </div>
+<div class="conteudo">
+    <h2>confirmar portabilidade</h2>
+    <div class="dados_cliente">
+        <div class="empresa" >
+            <span class="p">nome da empresa</span>
+            <span class="dados_cliente2">Concrete Solutions</span>
+        </div>
+        <div class="CNPJ_empresa">
+            <span class="p">CNPJ da empresa</span>
+            <span class="dados_cliente2">60.701.190/0001-34 </span>
+        </div>
+        <div class="banco">
+            <span class="p">Banco da conta salário</span>
+            <span class="dados_cliente2">Banco novo S.A</span>
+        </div>
+        <div class="agencia">
+            <span class="p">agência para creditar salário</span>
+            <span class="dados_cliente2">1234</span>
+        </div>
+        <div class="conta_cred">
+            <span class="p">Conta para créditar salário</span>
+            <span class="dados_cliente2">c/c 123453545-5</span>
+        </div>
+    </div>
+    <div class="linha">
+    </div>
+    <h2 class="texto2">informações importantes</h2>
+    <span class="span2" style="font-size: 10pt">> A portabilidade de salário não é automatatica, está sujeita à analise e aprovação.</span>
+    <span class="span2" style="font-size: 10pt">> Você receberá um SMS assim que a portabilidade for confirmada. até lá você continua recebendo seu salário no banco atual.</span>
+    
+    <div class="botões">
+        <div class="botão_1">
+            <label class="botão_cont"> </label>
+            <a style="text-decoration: none" href="#" class="botão_c" onclick="cli()">confirmar</a>
+            <script>
+                function cli() {
+                    location.href = "pag3.html";
+                }
+            </script>
+        </div>
+        <div class="botão">
+            <label class="botão_cont"> </label>
+            <a style="text-decoration: none"; href="#" class="botão_volta" onclick="voltar()">Voltar</a>
+            <script>
+                function voltar() {
+                   history.back();
+                }
+            </script>
+        </div>
+    </div>
+</div>
+    <div class="rodap">
+        <div class="L1">
+            <ul>
+                <li>
+                    <span>Itaú na internet</span>
+                </li>
+                <li><span>Sobre Itaú </span></li>
+                <li><span>Mapa do site </span></li>
+                <li><span>Aprenda a usar</span></li>
+                <li><span>Segurança </span></li>
+                </li>
+            </ul>
+        </div>
+        <div class="L2">
+            <ul>
+                <li>
+                    <span>Conveniência</span></li>
+                <li><span>App's Itaú </span></li>
+                <li><span>SMS Itaú </span></li>
+                <li><span>Caixas eletrônicos</span></li>
+                <li><span>Agências </span></li>
+                </li>
+            </ul>
+        </div>
+        <div class="L3">
+            <ul>
+                <li>
+                    <span>Precisa de ajuda?</span></li>
+                <li><span>Duvidas frequentes </span></li>
+                <li><span>Tutoriais </span></li>
+                <li><span>Mensagem</span></li>
+                <li><span>Telefone </span></li>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
